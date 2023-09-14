@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { Box, Typography } from "@mui/material";
 
-function HorizontalScrollbar() {
-  return (
-    <div>HorizontalScrollbar</div>
-  )
-}
+import ExerciseCard from "./ExerciseCard";
+import BodyPart from "./BodyPart";
 
-export default HorizontalScrollbar
+const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
+  <div>
+    {data.map((item) => (
+      <Box
+        key={item.id || item}
+        itemId={item.id || item}
+        title={item.id || item}
+        m="0 40px"
+      >
+        {bodyParts ? (
+          <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
+        ) : (
+          <ExerciseCard exercise={item} />
+        )}
+      </Box>
+    ))}
+  </div>
+);
+
+export default HorizontalScrollbar;

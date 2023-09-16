@@ -12,7 +12,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       const bodyPartsData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
         exerciseOptions
       );
 
@@ -29,6 +29,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         exerciseOptions
       );
 
+
       const searchedExercises = exercisesData.filter(
         (item) =>
           item.name.toLowerCase().includes(search) ||
@@ -39,7 +40,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
       window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
 
-      setSearch("");
+      setSearch('');
       setExercises(searchedExercises);
     }
   };
@@ -69,7 +70,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             backgroundColor: "#fff",
             borderRadius: "40px",
           }}
-          value=""
+          value={search}
           onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())}
           placeholder="Search Exercises"
           type="text"

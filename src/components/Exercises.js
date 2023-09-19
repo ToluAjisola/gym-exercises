@@ -24,8 +24,6 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
 
-  console.log(exercises);
-
   return (
     <Box id="exercises" sx={{ mt: { lg: "109px" } }} mt="50px" p="20px">
       <Typography
@@ -43,7 +41,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         justifyContent="center"
       >
         {exercises.map((exercise, idx) => (
-          <p>{exercise.name}</p>
+          <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
       <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">

@@ -26,7 +26,11 @@ const { id } = useParams();
        );
        setExerciseDetail(exerciseDetailData);
 
-       
+       const exerciseVideosData = await fetchData(
+         `${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`,
+         youtubeOptions
+       );
+       setExerciseVideos(exerciseVideosData.contents);
 
      };
      fetchExercisesData();

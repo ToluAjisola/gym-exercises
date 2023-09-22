@@ -8,7 +8,8 @@ import ExerciseVideos from "../components/ExerciseVideos";
 import SimilarExercises from "../components/SimilarExercises";
 
 const ExerciseDetail = () => {
-const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseDetail, setExerciseDetail] = useState({});
+  const [exerciseVideos, setExerciseVideos] = useState([]);
 const { id } = useParams();
 
    useEffect(() => {
@@ -24,6 +25,8 @@ const { id } = useParams();
          exerciseOptions
        );
        setExerciseDetail(exerciseDetailData);
+
+       
 
      };
      fetchExercisesData();

@@ -10,6 +10,7 @@ import SimilarExercises from "../components/SimilarExercises";
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
+  const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
 const { id } = useParams();
 
    useEffect(() => {

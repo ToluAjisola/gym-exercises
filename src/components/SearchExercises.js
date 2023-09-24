@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
-import { SearchOffSharp } from '@mui/icons-material';
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";

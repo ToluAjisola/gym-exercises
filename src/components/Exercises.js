@@ -64,7 +64,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {exercises.map((exercise, idx) => (
+        {currentExercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>

@@ -11,7 +11,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF2625; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff252589; 
 }
 
 .right-arrow,

@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# React Gym Application
+![Screenshot (1)](https://github.com/ToluAjisola/gym-exercises/assets/43460252/791f4115-97a3-402d-a072-b42c47229b26)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

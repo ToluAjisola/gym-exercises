@@ -2,6 +2,7 @@
 ![Screenshot (1)](https://github.com/ToluAjisola/gym-exercises/assets/43460252/791f4115-97a3-402d-a072-b42c47229b26)
 
 It can be viewed through here: [Live Link](golds-exercises.netlify.app) 
+
 About: This is a React application that involves a user getting access to several exercises from an external API called RapidApi. The exercises are categorized based on the areas the users want to work on, and when selected, a corresponding YouTube video tutorial will be provided.
 
 
